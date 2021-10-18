@@ -26,6 +26,11 @@
 								<Text value="{Street}"/>
 							</f:fields>
 						</f:FormElement>
+						<f:FormElement label="Comm Reg:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
 					</f:formElements>
 				</f:FormContainer>
 			</f:formContainers>
