@@ -1,0 +1,90 @@
+<mvc:View controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.capitalExpenditure.BlockCapitalExpenditure" xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" height="100%">
+	<!--<m:ToolbarSpacer/>-->
+	<!--<m:Toolbarspacer>-->
+	<!--<m:Button id="editButton2" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
+	<Table id="table1" ariaLabelledBy="title" selectionMode="MultiToggle" rows="{/modelData}" visibleRowCount="12" enableColumnFreeze="true"
+		showColumnVisibilityMenu="true">
+		<!--<m:headerToolbar>-->
+		<!--<m:OverflowToolbar id="otbSubheader1">-->
+		<!--<m:Title text="Service Request" level="H2"/>-->
+		<!--<m:ToolbarSpacer/>-->
+		<!--<m:Button id="editButton3" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
+		<!--<Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="false"/>-->
+		<!--<Button id="cancelButton" text="Cancel" type="Transparent" press="onCancel" visible="false"/>-->
+		<!--</m:OverflowToolbar>-->
+		<!--</m:headerToolbar>-->
+		<extension>
+			<m:OverflowToolbar style="Clear">
+				<m:Title id="title" text="Capital Expenditures"/>
+				<m:ToolbarSpacer/>
+				<m:Button id="editButton2" text="Add Row" tooltip="Add rows" icon="sap-icon://add" type="Success" press="onAddRowContract"/>
+				<m:Button icon="sap-icon://sorting-ranking" tooltip="Sort ascending across Categories and Name" press="sortCategoriesAndName"/>
+				<m:Button icon="sap-icon://sort" tooltip="Sort Categories in addition to current sorting" press="sortCategories"/>
+				<m:Button icon="sap-icon://decline" tooltip="Clear all sortings" press="clearAllSortings"/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns class="sapwidth">
+			<Column width="30rem" sortProperty="supplier" filterProperty="supplier" headerSpan="2">
+				<multiLabels>
+					<m:Label text="Section 5: Capital Expenditures" textAlign="Center" width="100%"/>
+					<m:Label text="Productive Asset Class" wrapping="true"/>
+					<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+				</multiLabels>
+				<!--<m:Label text="Job Catagories" textAlign="Center" width="100%"/>-->
+				<template>
+					<m:Text text="{productive}"/>
+				</template>
+			</Column>
+			<Column width="30rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 5: Capital Expenditures" textAlign="Center" width="100%"/>
+					<m:Label text="Examples" wrapping="true"/>
+					<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+				</multiLabels>
+				<!--<m:Label text="Description" textAlign="Center" width="100%"/>-->
+				<template>
+					<m:Text text="{ex}"/>
+				</template>
+			</Column>
+			<Column width="10rem" sortProperty="street" filterProperty="street" headerSpan="4">
+				<multiLabels>
+					<m:Label text="31Dec20" textAlign="Center" width="100%"/>
+					<m:Label text="Total Acquisition Cost" wrapping="true"/>
+					<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+				</multiLabels>
+				<template>
+					<m:Input value="{total}" wrapping="true" editable="true"/>
+				</template>
+			</Column>
+			<Column width="10rem" sortProperty="city">
+				<multiLabels>
+					<m:Label text="31Dec20" wrapping="true"/>
+					<m:Label text="Manufactured IK?" wrapping="true"/>
+					<!--<m:Label text="City" textAlign="Center" width="100%"/>-->
+				</multiLabels>
+				<template>
+					<m:Label text="{mft}" editable="false"/>
+				</template>
+			</Column>
+			<Column width="10rem" sortProperty="phone">
+				<multiLabels>
+					<m:Label text="31Dec20" textAlign="Center"/>
+					<m:Label text="% of Cost Allowed"/>
+				</multiLabels>
+				<template>
+					<m:Label text="{percent}" textAlign="Center"/>
+				</template>
+			</Column>
+			<Column width="10rem">
+				<multiLabels>
+					<m:Label text="31Dec20"/>
+					<m:Label text="In-Kingdom Allowance" textAlign="Center" width="100%"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{ika}"/>
+				</template>
+			</Column>
+		</columns>
+	</Table>
+</mvc:View>

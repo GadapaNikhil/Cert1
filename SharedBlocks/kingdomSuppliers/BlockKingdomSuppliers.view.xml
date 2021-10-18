@@ -1,0 +1,136 @@
+<mvc:View controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.kingdomSuppliers.BlockKingdomSuppliers" xmlns="sap.ui.table" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m"
+	height="100%">
+	<Table id="table1" ariaLabelledBy="title" selectionMode="MultiToggle" rows="{/modelData}" visibleRowCount="12" enableColumnFreeze="true"
+		showColumnVisibilityMenu="true">
+		<extension>
+			<m:OverflowToolbar style="Clear">
+				<m:Title id="title" text="In-Kingdom Suppliers"/>
+				<m:ToolbarSpacer/>
+				<m:Button id="editButton2" text="Add Row" tooltip="Add rows" icon="sap-icon://add" type="Success" press="onAddRowContract"/>
+				<m:Button icon="sap-icon://sorting-ranking" tooltip="Sort ascending across Categories and Name" press="sortCategoriesAndName"/>
+				<m:Button icon="sap-icon://sort" tooltip="Sort Categories in addition to current sorting" press="sortCategories"/>
+				<m:Button icon="sap-icon://decline" tooltip="Clear all sortings" press="clearAllSortings"/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns class="sapwidth">
+			<Column width="8rem" sortProperty="Ksa" filterProperty="Ksa" headerSpan="8">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="KSA Registration Number" wrapping="true" width="100%"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Ksa}"/>
+				</template>
+			</Column>
+			<Column width="20rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="Supplier Name" width="100%"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{SupplierName}"/>
+				</template>
+			</Column>
+			<Column width="4rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="SME (Y/N)?" wrapping="true" width="100%"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{SME}"/>
+				</template>
+			</Column>
+			<Column width="20rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="Brief Description about Types of Matereials/Services Provided" wrapping="true" width="100%"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Descrition}"/>
+				</template>
+			</Column>
+			<Column width="10rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="Business Segment" wrapping="true"/>
+				</multiLabels>
+				<m:Label text="Business Segment" wrapping="true" width="100%"/>
+				<template>
+					<m:Text text="{Business}"/>
+				</template>
+			</Column>
+			<Column width="8rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="Produced Locally or Imported?(Materials only)" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Produced}"/>
+				</template>
+			</Column>
+			<Column width="5rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="Certified IKTVA Ratio" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Certified}"/>
+				</template>
+			</Column>
+			<Column width="5rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="Section 3 : In-Kingdom Suppliers" textAlign="Center" width="100%"/>
+					<m:Label text="Segment Ratio" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Segment}"/>
+				</template>
+			</Column>
+			<Column width="5rem" sortProperty="Ksa" filterProperty="Ksa" headerSpan="5">
+				<multiLabels>
+					<m:Label text="31Dec20" textAlign="Center" width="100%"/>
+					<m:Label text="Selected IKTVA Ratio" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Selected}"/>
+				</template>
+			</Column>
+			<Column width="10rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="31Dec20" textAlign="Center" width="100%"/>
+					<m:Label text="Total Purchase from IK Suppliers" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{total}"/>
+				</template>
+			</Column>
+			<Column width="6rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="31Dec20" textAlign="Center" width="100%"/>
+					<m:Label text="In-Kingdom Portion" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Inkingdom}"/>
+				</template>
+			</Column>
+			<Column width="6rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="31Dec20" textAlign="Center" width="100%"/>
+					<m:Label text="Saudi Aramco Portion %" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{Saudi}"/>
+				</template>
+			</Column>
+			<Column width="6rem" sortProperty="supplier" filterProperty="supplier">
+				<multiLabels>
+					<m:Label text="31Dec20" textAlign="Center" width="100%"/>
+					<m:Label text="Saudi Aramco Portion $" wrapping="true"/>
+				</multiLabels>
+				<template>
+					<m:Text text="{SaudiPortion}"/>
+				</template>
+			</Column>
+		</columns>
+	</Table>
+</mvc:View>
