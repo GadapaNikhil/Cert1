@@ -7,7 +7,7 @@
 		showColumnVisibilityMenu="true">
 		<extension>
 			<m:OverflowToolbar style="Clear">
-				<m:Title id="title" text="Capital Expenditures"/>
+				<m:Title id="title" text="IKTVA SCORE"/>
 				<m:ToolbarSpacer/>
 				<m:Button id="editButton2" text="Add Row" tooltip="Add rows" icon="sap-icon://add" type="Success" press="onAddRowContract"/>
 				<m:Button icon="sap-icon://sorting-ranking" tooltip="Sort ascending across Categories and Name" press="sortCategoriesAndName"/>
