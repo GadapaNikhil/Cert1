@@ -72,7 +72,7 @@
 			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Phone:" design="Bold"/>
 			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd"  text="+966 56 603 0397"/>
 				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>
-					<m:Button class="sapUiSmallMarginTop sapUiTinyMarginEnd sapUiTinyMarginBottom" text="Actions" press="toggleFooter"/>
+					<m:Button class="sapUiSmallMarginTop sapUiTinyMarginEnd " text="Actions" type="Emphasized" press="toggleFooter"/>
 					<!--	</m:layoutData>-->
 					<!--</m:OverflowToolbarButton>-->
 					<!--<m:OverflowToolbarButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/>-->
