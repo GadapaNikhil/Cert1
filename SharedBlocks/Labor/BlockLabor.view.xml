@@ -4,17 +4,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:m="sap.m"
 	height="100%">
-	<!--<m:Page-->
-	<!--	showHeader="false"-->
-	<!--	enableScrolling="false"-->
-	<!--	class="sapUiContentPadding">-->
-	<!--	<m:ToolbarSpacer/>-->
-			
-	<!--	<m:content>-->
-		
-			<!--<m:ToolbarSpacer/>-->
-			<!--<m:Toolbarspacer>-->
-				<!--<m:Button id="editButton2" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
+
 			<Table
 				id="table1"
 				ariaLabelledBy="title"
