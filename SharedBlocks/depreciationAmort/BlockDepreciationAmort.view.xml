@@ -4,7 +4,6 @@
 	xmlns:core="sap.ui.core"
 	xmlns="sap.m">
 	<Table id="idProductsTable"
-		inset="false"
 		items="{
 			path: '/ProductCollection'
 		}">
@@ -63,9 +62,15 @@
 		</columns>
 		<items>
 			<ColumnListItem>
+				<customData>
+						<core:CustomData key="mydata" value="{File_Status}" writeToDom="true"></core:CustomData>
+					</customData>
 				<cells>
-					<ObjectIdentifier
-						title="{Name}"/>
+					
+					<Text
+						text="{Name}">
+						
+					</Text>
 					<Text
 						text="{ProductId}" />
 					<Text
