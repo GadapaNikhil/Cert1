@@ -6,12 +6,10 @@
 		<extension>
 			<m:OverflowToolbar style="Clear">
 				<m:Title id="title" text="Labour"/>
-			<m:ToolbarSpacer/>
 				<m:Button
 	              icon="sap-icon://add"
-	              text="Add Row(s)"
 	              press=".onAddPress"
-	              type="Emphasized"
+	              type="Transparent"
 	            />
 			</m:OverflowToolbar>
 		</extension>
