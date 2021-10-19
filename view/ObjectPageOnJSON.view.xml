@@ -34,17 +34,20 @@
 
 				<expandedHeading>
 					<m:HBox>
-						<m:Image src="preview-institutional.jpg" />
-						
+					<m:Image src="preview-institutional.jpg"  />
+							<m:Image src="ITKVA.png" width="17%" />
+								<m:Title class="sapUiSmallMarginTop" text="MOHD AL MARAE MODERN EST.B COMPANY" titleStyle="H1" wrapping="true"/>
+	
 					</m:HBox>
 				</expandedHeading>
 
 				<snappedHeading>
 					<m:FlexBox  fitContainer="true" alignItems="Center">
+							<m:Avatar src="/building2.jpg" class="sapUiTinyMarginEnd"/>
 						<!--<m:Avatar src="/imageID_275314.png" class="sapUiTinyMarginEnd"/>-->
 						<!--<m:Title text="Denise Smith" wrapping="true"/>-->
 						<m:Title text="MOHD AL MARAE MODERN EST.B" wrapping="true"/>
-						<m:ObjectMarker type="Favorite" class="sapUiTinyMarginBegin"/>
+						<!--<m:ObjectMarker type="Favorite" class="sapUiTinyMarginBegin"/>-->
 					</m:FlexBox>
 				</snappedHeading>
 
@@ -64,11 +67,17 @@
 					<!--<m:OverflowToolbarButton icon="sap-icon://edit" text="edit header" type="Emphasized" tooltip="edit">-->
 					<!--	<m:layoutData>-->
 					<!--		<m:OverflowToolbarLayoutData priority="NeverOverflow"/>-->
+						<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Lisa Andrew" design="Bold"/>
+			<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="|" design="Bold"/>
+			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Phone:" design="Bold"/>
+			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd"  text="+966 56 603 0397"/>
+				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>
+					<m:Button class="sapUiSmallMarginTop sapUiTinyMarginEnd sapUiTinyMarginBottom" text="Actions" press="toggleFooter"/>
 					<!--	</m:layoutData>-->
 					<!--</m:OverflowToolbarButton>-->
 					<!--<m:OverflowToolbarButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/>-->
 					<!--<m:OverflowToolbarButton icon="sap-icon://show" text="show state" tooltip="show"/>-->
-					<m:Button text="Toggle Footer" press="toggleFooter"/>
+					<!--<m:Button text="Toggle Footer" press="toggleFooter"/>-->
 				</actions>
 			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>
