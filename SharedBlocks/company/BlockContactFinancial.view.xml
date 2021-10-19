@@ -18,7 +18,7 @@
 	<VBox class="sapUiSmallMargin">
 		<f:Form editable="true" ariaLabelledBy="Title1">
 			<f:title>
-				<core:Title text="IKTVA Contact Person"/>
+				<core:Title text="Local Company Financial Executive"/>
 			</f:title>
 			<f:layout>
 				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
@@ -37,7 +37,12 @@
 								<Text value="{Street}"/>
 							</f:fields>
 						</f:FormElement>
-						<f:FormElement label="Office">
+						<f:FormElement label="Office:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Mobile:">
 							<f:fields>
 								<Text value="{Street}"/>
 							</f:fields>

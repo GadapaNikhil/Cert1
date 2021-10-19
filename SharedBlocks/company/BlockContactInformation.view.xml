@@ -36,7 +36,11 @@
 								<Text value="{Street}"/>
 							</f:fields>
 						</f:FormElement>
-						
+						<f:FormElement label="Vendor ID:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
 					</f:formElements>
 				</f:FormContainer>
 			</f:formContainers>
