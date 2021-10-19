@@ -1,0 +1,41 @@
+<mvc:View controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.supplierDevelopment.SupplierDevelopment" xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns:c="sap.ui.core" xmlns:m="sap.m" height="100%">
+	<!--<m:ToolbarSpacer/>-->
+	<!--<m:Toolbarspacer>-->
+	<!--<m:Button id="editButton2" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
+	<Table rows="{/modelData}" selectionMode="MultiToggle" visibleRowCount="7" paste="onPaste">
+		<columns>
+			<Column width="20rem">
+				<m:Label text="Descripition of the Types of Training"/>
+				<template>
+					<m:Text text="{productive}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column width="20rem">
+				<m:Label text="Names of Companies Benefited"/>
+				<template>
+					<m:Text text="{companyBenefited}"/>
+				</template>
+			</Column>
+			<Column width="6rem">
+				<m:Label text="31-Dec-18"/>
+				<template>
+					<m:Text text="{Dec18}"/>
+				</template>
+			</Column>
+			<Column width="6rem">
+				<m:Label text="31-Dec-19"/>
+				<template>
+					<m:Text text="{Dec18}"/>
+				</template>
+			</Column>
+			<Column width="6rem">
+				<m:Label text="31-Dec-20"/>
+				<template>
+					<m:Text text="{Dec18}"/>
+				</template>
+			</Column>
+			
+		</columns>
+	</Table>
+</mvc:View>

@@ -4,7 +4,7 @@
 	<VBox class="sapUiSmallMargin">
 		<f:Form editable="true" ariaLabelledBy="Title1">
 			<f:title>
-				<core:Title text="Local Company CEO/GM"/>
+				<core:Title text="IKTVA Contact Person"/>
 			</f:title>
 			<f:layout>
 				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
@@ -13,17 +13,22 @@
 			<f:formContainers>
 				<f:FormContainer ariaLabelledBy="Title2">
 					<f:formElements>
-						<f:FormElement label="Company Name:">
+						<f:FormElement label="Name:">
 							<f:fields>
 								<Text text="+ 1 415-321-1234"/>
 							</f:fields>
 						</f:FormElement>
-						<f:FormElement label="Fiscal Year End:">
+						<f:FormElement label="Email">
 							<f:fields>
 								<Text value="{Street}"/>
 							</f:fields>
 						</f:FormElement>
-						<f:FormElement label="Address:">
+						<f:FormElement label="Office:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Mobile:">
 							<f:fields>
 								<Text value="{Street}"/>
 							</f:fields>

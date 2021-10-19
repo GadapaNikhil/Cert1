@@ -1,0 +1,44 @@
+<mvc:View controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.researchDevelopment.researchDevelopment" xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns:c="sap.ui.core" xmlns:co="sap.ui.core.Control" xmlns:m="sap.m" height="100%">
+	<!--<m:ToolbarSpacer/>-->
+	<!--<m:Toolbarspacer>-->
+	<!--<m:Button id="editButton2" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
+	<Table rows="{/modelData}" selectionMode="MultiToggle" visibleRowCount="7" paste="onPaste">
+		<columns>
+			<Column width="20rem">
+				<m:Label text=" Description of the Activity and Justification"/>
+				<template>
+					<m:Text text="{productive}" wrapping="false"/>
+				</template>
+		<!--		<m:footer>-->
+		<!--	<m:Text id="idFooterText" text="test"/>-->
+		<!--</m:footer>-->
+			</Column>
+			<Column width="6rem">
+				<m:Label text="31-Dec-18"/>
+				<template>
+					<m:Text text="{Dec18}"/>
+				</template>
+			</Column>
+			<Column width="6rem">
+				<m:Label text="31-Dec-19"/>
+				<template>
+					<m:Text text="{Dec18}"/>
+				</template>
+			</Column>
+			<Column width="6rem">
+				<m:Label text="31-Dec-20"/>
+				<template>
+					<m:Text text="{Dec18}"/>
+				</template>
+			</Column>
+		</columns>
+		<!--<footer>-->
+		<!--	<m:Text id="idFooterText" text="test"/>-->
+		<!--	<m:Text id="idFooterText1" text="test"/>-->
+		<!--	<m:Text id="idFooterText2" text="test"/>-->
+		<!--	<m:Text id="idFooterText3" text="test"/>-->
+		<!--</footer>-->
+	</Table>
+	
+</mvc:View>

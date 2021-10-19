@@ -5,15 +5,6 @@
 	<!--<m:Button id="editButton2" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
 	<Table id="table1" ariaLabelledBy="title" selectionMode="MultiToggle" rows="{/modelData}" visibleRowCount="12" enableColumnFreeze="true"
 		showColumnVisibilityMenu="true">
-		<!--<m:headerToolbar>-->
-		<!--<m:OverflowToolbar id="otbSubheader1">-->
-		<!--<m:Title text="Service Request" level="H2"/>-->
-		<!--<m:ToolbarSpacer/>-->
-		<!--<m:Button id="editButton3" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
-		<!--<Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="false"/>-->
-		<!--<Button id="cancelButton" text="Cancel" type="Transparent" press="onCancel" visible="false"/>-->
-		<!--</m:OverflowToolbar>-->
-		<!--</m:headerToolbar>-->
 		<extension>
 			<m:OverflowToolbar style="Clear">
 				<m:Title id="title" text="Capital Expenditures"/>
@@ -29,9 +20,7 @@
 				<multiLabels>
 					<m:Label text="Section 5: Capital Expenditures" textAlign="Center" width="100%"/>
 					<m:Label text="Productive Asset Class" wrapping="true"/>
-					<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
 				</multiLabels>
-				<!--<m:Label text="Job Catagories" textAlign="Center" width="100%"/>-->
 				<template>
 					<m:Text text="{productive}"/>
 				</template>
@@ -40,9 +29,7 @@
 				<multiLabels>
 					<m:Label text="Section 5: Capital Expenditures" textAlign="Center" width="100%"/>
 					<m:Label text="Examples" wrapping="true"/>
-					<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
 				</multiLabels>
-				<!--<m:Label text="Description" textAlign="Center" width="100%"/>-->
 				<template>
 					<m:Text text="{ex}"/>
 				</template>
@@ -51,7 +38,6 @@
 				<multiLabels>
 					<m:Label text="31Dec20" textAlign="Center" width="100%"/>
 					<m:Label text="Total Acquisition Cost" wrapping="true"/>
-					<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
 				</multiLabels>
 				<template>
 					<m:Input value="{total}" wrapping="true" editable="true"/>
@@ -61,7 +47,6 @@
 				<multiLabels>
 					<m:Label text="31Dec20" wrapping="true"/>
 					<m:Label text="Manufactured IK?" wrapping="true"/>
-					<!--<m:Label text="City" textAlign="Center" width="100%"/>-->
 				</multiLabels>
 				<template>
 					<m:Label text="{mft}" editable="false"/>

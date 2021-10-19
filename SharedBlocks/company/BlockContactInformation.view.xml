@@ -31,12 +31,20 @@
 								<Text value="{Street}"/>
 							</f:fields>
 						</f:FormElement>
+<<<<<<< Upstream, based on afd1c7d41cde9555a5e4828148558e2fd20f35e9
 							<f:FormElement label="test:">
 							<f:fields>
 								<Text value="{Street}"/>
 							</f:fields>
 						</f:FormElement>
 						
+=======
+						<f:FormElement label="Vendor ID:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
+>>>>>>> 4daaf43 Changes on 18-10-2021
 					</f:formElements>
 				</f:FormContainer>
 			</f:formContainers>
