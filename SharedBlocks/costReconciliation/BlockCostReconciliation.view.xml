@@ -1,44 +1,54 @@
 <mvc:View
-		xmlns:mvc="sap.ui.core.mvc"
-		xmlns:f="sap.ui.layout.form"
-		xmlns:core="sap.ui.core"
-		xmlns="sap.m">
-
-	<VBox class="sapUiSmallMargin">
-		<f:Form editable="true" ariaLabelledBy="Title1">
-			<f:title>
-				<core:Title text="Local Company CEO/GM"/>
-			</f:title>
-			<f:layout>
-				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
-					emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
-			</f:layout>
-			<f:formContainers>
-				<f:FormContainer ariaLabelledBy="Title2">
-					<f:formElements>
-						<f:FormElement label="Name:">
-							<f:fields>
-								<Text text="+ 1 415-321-1234"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Email">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Office:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Mobile:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-					</f:formElements>
-				</f:FormContainer>
-			</f:formContainers>
-		</f:Form>
-	</VBox>
+        controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.costReconciliation.BlockCostReconciliation"
+        xmlns="sap.ui.table"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:m="sap.m"
+        xmlns:u="sap.ui.unified"
+        xmlns:core="sap.ui.core"
+        height="100%">
+    
+            <TreeTable
+                    id="TreeTableBasic"
+                    rows="{path:'/catalog/clothing', parameters: {arrayNames:['categories']}}"
+                    selectionMode="MultiToggle"
+                    enableSelectAll="false"
+                    ariaLabelledBy="title">
+                <extension>
+                    <m:OverflowToolbar style="Clear">
+                        <m:Title id="title" text="Clothing"/>
+                        <m:ToolbarSpacer/>
+                        <m:Button text="Collapse all" press="onCollapseAll"/>
+                        <m:Button text="Collapse selection" press="onCollapseSelection"/>
+                        <m:Button text="Expand first level" press="onExpandFirstLevel"/>
+                        <m:Button text="Expand selection" press="onExpandSelection"/>
+                    </m:OverflowToolbar>
+                </extension>
+                <columns>
+                    <Column width="20rem">
+                        <m:Label text="Categories"/>
+                        <template>
+                            <m:Text text="{name}" wrapping="false" />
+                        </template>
+                    </Column>
+                    <Column width="9rem">
+                        <m:Label text="Price"/>
+                        <template>
+                            <m:Text text="{amount}"/>
+                        </template>
+                    </Column>
+                    <Column width="11rem">
+                        <m:Label text="Size"/>
+                        <template>
+                            <m:Select
+                                    items="{path: '/sizes', templateShareable: true}"
+                                    selectedKey="{size}"
+                                    visible="{= !!${size}}"
+                                    forceSelection="false">
+                                <core:Item key="{key}" text="{value}"/>
+                            </m:Select>
+                        </template>
+                    </Column>
+                </columns>
+            </TreeTable>
+        
 </mvc:View>

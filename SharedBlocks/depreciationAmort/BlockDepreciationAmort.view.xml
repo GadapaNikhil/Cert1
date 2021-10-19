@@ -1,44 +1,93 @@
 <mvc:View
-		xmlns:mvc="sap.ui.core.mvc"
-		xmlns:f="sap.ui.layout.form"
-		xmlns:core="sap.ui.core"
-		xmlns="sap.m">
-
-	<VBox class="sapUiSmallMargin">
-		<f:Form editable="true" ariaLabelledBy="Title1">
-			<f:title>
-				<core:Title text="Local Company CEO/GM"/>
-			</f:title>
-			<f:layout>
-				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
-					emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
-			</f:layout>
-			<f:formContainers>
-				<f:FormContainer ariaLabelledBy="Title2">
-					<f:formElements>
-						<f:FormElement label="Name:">
-							<f:fields>
-								<Text text="+ 1 415-321-1234"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Email">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Office:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Mobile:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-					</f:formElements>
-				</f:FormContainer>
-			</f:formContainers>
-		</f:Form>
-	</VBox>
+	controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.depreciationAmort.BlockDepreciationAmort"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<Table id="idProductsTable"
+		inset="false"
+		items="{
+			path: '/ProductCollection'
+		}">
+		
+		
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Year" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Total Capital Expenditures" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text=" In-Kingdom Allowance " />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="2018" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="2019" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="2020" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="2021" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="2022" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="2023" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="2024" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="2025" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier
+						title="{Name}"/>
+					<Text
+						text="{ProductId}" />
+					<Text
+						text="{allowance}" />
+					<Text
+						text="{2018}" />
+					<Text
+						text="{2019}" />
+					<Text
+						text="{2020}" />
+					<Text
+						text="{2021}" />
+					<Text
+						text="{2022}" />
+					<Text
+						text="{2023}" />
+					<Text
+						text="{2024}" />
+					<Text
+						text="{2025}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
 </mvc:View>

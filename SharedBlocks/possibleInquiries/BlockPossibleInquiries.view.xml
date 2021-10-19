@@ -1,44 +1,31 @@
 <mvc:View
-		xmlns:mvc="sap.ui.core.mvc"
-		xmlns:f="sap.ui.layout.form"
-		xmlns:core="sap.ui.core"
-		xmlns="sap.m">
-
-	<VBox class="sapUiSmallMargin">
-		<f:Form editable="true" ariaLabelledBy="Title1">
-			<f:title>
-				<core:Title text="Local Company CEO/GM"/>
-			</f:title>
-			<f:layout>
-				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
-					emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
-			</f:layout>
-			<f:formContainers>
-				<f:FormContainer ariaLabelledBy="Title2">
-					<f:formElements>
-						<f:FormElement label="Name:">
-							<f:fields>
-								<Text text="+ 1 415-321-1234"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Email">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Office:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Mobile:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-					</f:formElements>
-				</f:FormContainer>
-			</f:formContainers>
-		</f:Form>
-	</VBox>
+	xmlns="sap.ui.table"
+	controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.possibleInquiries.BlockPossibleInquiries"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified"
+	xmlns:c="sap.ui.core"
+	xmlns:m="sap.m"
+    height="100%">
+	<Table rows="{/modelData}" selectionMode="MultiToggle" visibleRowCount="7" paste="onPaste" ariaLabelledBy="title">
+		<extension>
+			<m:OverflowToolbar style="Clear">
+				<m:Title id="title" text="Products"/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns>
+			<Column width="15rem">
+				<m:Label text="Possible Inquiries"/>
+				<template>
+					<m:Text text="{Ksa}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column width="11rem">
+				<m:Label text="Response"/>
+				<template>
+					<m:Input value="{ProductId}"/>
+				</template>
+			</Column>
+			
+		</columns>
+	</Table>
 </mvc:View>
