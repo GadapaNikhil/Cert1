@@ -31,6 +31,12 @@
 								<Text value="{Street}"/>
 							</f:fields>
 						</f:FormElement>
+							<f:FormElement label="test:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
+						
 					</f:formElements>
 				</f:FormContainer>
 			</f:formContainers>
