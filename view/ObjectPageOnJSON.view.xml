@@ -80,6 +80,11 @@
 <!--				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="391250" design="Bold"/>-->
 <!--				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>-->
 <!-->>>>>>> branch 'main' of https://github.com/GadapaNikhil/Cert1.git-->
+
+
+<m:Button class="sapUiSmallMarginTop sapUiTinyMarginEnd " icon="sap-icon://list" text="" type="Emphasized" press="toggleFooter0"/>
+
+
 					<m:Button class="sapUiSmallMarginTop sapUiTinyMarginEnd " text="Actions" type="Emphasized" press="toggleFooter"/>
 					<!--	</m:layoutData>-->
 					<!--</m:OverflowToolbarButton>-->
