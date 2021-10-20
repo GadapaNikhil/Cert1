@@ -1,6 +1,6 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m">
 	<VBox class="sapUiSmallMargin">
-		<f:Form editable="true" ariaLabelledBy="Title1">
+		<f:Form editable="false" ariaLabelledBy="Title1">
 			<f:title>
 				<core:Title text="Company Contact Information"/>
 			</f:title>
@@ -13,7 +13,7 @@
 					<f:formElements>
 						<f:FormElement label="Company Name:">
 							<f:fields>
-								<Text text="+ 1 415-321-1234"/>
+								<Text text="MOHD AL MARAE"/>
 							</f:fields>
 						</f:FormElement>
 						<f:FormElement label="Fiscal Year End:">

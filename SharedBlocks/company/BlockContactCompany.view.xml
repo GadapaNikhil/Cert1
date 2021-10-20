@@ -5,7 +5,7 @@
 		xmlns="sap.m">
 
 	<VBox class="sapUiSmallMargin">
-		<f:Form editable="true" ariaLabelledBy="Title1">
+		<f:Form editable="false" ariaLabelledBy="Title1">
 			<f:title>
 				<core:Title text="Local Company CEO/GM"/>
 			</f:title>

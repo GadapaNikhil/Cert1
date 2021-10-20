@@ -1,44 +1,65 @@
-<mvc:View
-		xmlns:mvc="sap.ui.core.mvc"
-		xmlns:f="sap.ui.layout.form"
-		xmlns:core="sap.ui.core"
-		xmlns="sap.m">
+<mvc:View controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.iktvaScore.BlockIktvaScore" xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" >
+	<!--<m:ToolbarSpacer/>-->
+	<!--<m:Toolbarspacer>-->
+	<!--<m:Button id="editButton2" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
+	<Table id="table1" ariaLabelledBy="title" selectionMode="MultiToggle" rows="{/modelData}" visibleRowCount="12" enableColumnFreeze="true"
+		showColumnVisibilityMenu="true">
+		<extension>
+			<m:OverflowToolbar style="Clear">
+				<m:Title id="title" text="IKTVA SCORE"/>
+				<m:ToolbarSpacer/>
+				<m:Button id="editButton2" text="Add Row" tooltip="Add rows" icon="sap-icon://add" type="Success" press="onAddRowContract"/>
+				<m:Button icon="sap-icon://sorting-ranking" tooltip="Sort ascending across Categories and Name" press="sortCategoriesAndName"/>
+				<m:Button icon="sap-icon://sort" tooltip="Sort Categories in addition to current sorting" press="sortCategories"/>
+				<m:Button icon="sap-icon://decline" tooltip="Clear all sortings" press="clearAllSortings"/>
+			</m:OverflowToolbar>
+		</extension>
+		<columns class="sapwidth">
+			<Column width="30rem" sortProperty="supplier" filterProperty="supplier" >
+			
+					<m:Label text="Section 2: iktva Score" textAlign="Center" width="100%"/>
+			
+				<template>
+					<m:Text text="{score}"/>
+				</template>
+			</Column>
+			
+			<Column width="20rem" sortProperty="supplier" filterProperty="supplier">
+			
+					<m:Label text="Saudi Aramco" textAlign="Center" width="100%"/>
 
-	<VBox class="sapUiSmallMargin">
-		<f:Form editable="true" ariaLabelledBy="Title1">
-			<f:title>
-				<core:Title text="Local Company CEO/GM"/>
-			</f:title>
-			<f:layout>
-				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
-					emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
-			</f:layout>
-			<f:formContainers>
-				<f:FormContainer ariaLabelledBy="Title2">
-					<f:formElements>
-						<f:FormElement label="Name:">
-							<f:fields>
-								<Text text="+ 1 415-321-1234"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Email">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Office:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-						<f:FormElement label="Mobile:">
-							<f:fields>
-								<Text value="{Street}"/>
-							</f:fields>
-						</f:FormElement>
-					</f:formElements>
-				</f:FormContainer>
-			</f:formContainers>
-		</f:Form>
-	</VBox>
+				<template>
+					<m:Text text="{sa1}"/>
+				</template>
+			</Column>
+			<Column width="20rem" sortProperty="street" filterProperty="street" >
+			
+					<m:Label text="Saudi Aramco" textAlign="Center" width="100%"/>
+
+				<template>
+					<m:Input value="{sa2}" wrapping="true" editable="true"/>
+				</template>
+			</Column>
+			<Column width="15rem" sortProperty="city">
+			
+					
+					<m:Label text="Total KSA" wrapping="true"/>
+				
+				<template>
+					<m:Label text="{tksa1}" editable="false"/>
+				</template>
+			</Column>
+			<Column width="15rem" sortProperty="phone">
+			
+					<m:Label text="Total KSA" textAlign="Center"/>
+				
+			
+				<template>
+					<m:Label text="{tksa2}" textAlign="Center"/>
+				</template>
+			</Column>
+		
+		</columns>
+	</Table>
 </mvc:View>
