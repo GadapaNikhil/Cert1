@@ -38,7 +38,7 @@
 					<m:Label text="Saudi Aramco" textAlign="Center" width="100%"/>
 
 				<template>
-					<m:Input value="{sa2}" wrapping="true" editable="true"/>
+					<m:Text text="{sa2}" wrapping="true" editable="true"/>
 				</template>
 			</Column>
 			<Column width="15rem" sortProperty="city">
