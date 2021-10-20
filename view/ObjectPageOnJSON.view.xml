@@ -240,8 +240,8 @@
 
 				<m:ToolbarSpacer />
 				<m:Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="true"/>
-				<m:Button id="editButton1" text="Submit" type="Success" press="onEdit"/>
-				 	<m:Button id="editButton" text="Create" type="Success" press="onEdit"/>
+				<m:Button id="editButton1" icon="sap-icon://kpi-corporate-performance" text="Submit" type="Success" press="onEdit"/>
+				 	<m:Button id="editButton" icon="sap-icon://add-contact" text="Create" type="Success" press="onEdit"/>
 				 	
 			</m:OverflowToolbar>
 		</footer>
