@@ -56,6 +56,7 @@
 					<!--<m:OverflowToolbarButton icon="sap-icon://edit" text="edit header" type="Emphasized" tooltip="edit">-->
 					<!--	<m:layoutData>-->
 					<!--		<m:OverflowToolbarLayoutData priority="NeverOverflow"/>-->
+<<<<<<< HEAD
 					<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Lisa Andrew" design="Bold"/>-->
 					<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="|" design="Bold"/>-->
 					<!--<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Phone:" design="Bold"/>-->
@@ -69,6 +70,16 @@
 					<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="Supplier ID:" design="Bold"/>-->
 					<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="391250" design="Bold"/>-->
 					<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>-->
+=======
+						<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Shaik-Al-Dalik" design="Bold"/>
+			<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="|" design="Bold"/>
+			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Company:" design="Bold"/>
+			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd"  text="MOHD AL MARAE MODERN EST.B"/>
+				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>
+				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="Supplier ID:" design="Bold"/>
+				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="391250" design="Bold"/>
+				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>
+>>>>>>> branch 'main' of https://github.com/GadapaNikhil/Cert1.git
 					<m:Button class="sapUiSmallMarginTop sapUiTinyMarginEnd " text="Actions" type="Emphasized" press="toggleFooter"/>
 					<!--	</m:layoutData>-->
 					<!--</m:OverflowToolbarButton>-->
@@ -216,11 +227,18 @@
 		</sections>
 		<footer>
 			<m:OverflowToolbar>
+<<<<<<< HEAD
 				<m:ToolbarSpacer/>
 				<m:Button type="Accept" text="Create" press=".onSuccessMessageBoxPress"/>
 				<m:Button type="Reject" text="Reject"/>
 				<!--<m:Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="true"/>-->
 				<!-- 	<m:Button id="editButton" text="Create" type="Success" press="onEdit"/>-->
+=======
+				<m:ToolbarSpacer />
+				<m:Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="true"/>
+				 	<m:Button id="editButton" text="Create" type="Success" press="onEdit"/>
+												
+>>>>>>> branch 'main' of https://github.com/GadapaNikhil/Cert1.git
 			</m:OverflowToolbar>
 		</footer>
 	</ObjectPageLayout>

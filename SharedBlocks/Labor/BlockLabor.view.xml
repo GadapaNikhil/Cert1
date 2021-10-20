@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mvc:View controllerName="sap.uxap.sample.ObjectPageOnJSON.controller.labour.BlockLabour" xmlns="sap.ui.table" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:m="sap.m" height="100%">
 	<Table id="table1" ariaLabelledBy="title" selectionMode="MultiToggle" rows="{/modelData}" visibleRowCount="12" enableColumnFreeze="true"
@@ -239,6 +240,335 @@
 			<!--</Column>-->
 		</columns>
 	</Table>
+=======
+<mvc:View
+	controllerName="sap.ui.table.sample.MultiHeader.controller.labour.BlockLabour"
+	xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	height="100%">
+
+			<Table
+				id="table1"
+				ariaLabelledBy="title"
+				selectionMode="MultiToggle"
+				rows="{/modelData}"
+				visibleRowCount="12"
+				enableColumnFreeze="true"
+				showColumnVisibilityMenu="true">
+					<!--<m:headerToolbar>-->
+										<!--<m:OverflowToolbar id="otbSubheader1">-->
+											<!--<m:Title text="Service Request" level="H2"/>-->
+											<!--<m:ToolbarSpacer/>-->
+											<!--<m:Button id="editButton3" text="Add Row" icon="sap-icon://add" type="Success" press="onAddRowContract"/>-->
+											<!--<Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="false"/>-->
+											<!--<Button id="cancelButton" text="Cancel" type="Transparent" press="onCancel" visible="false"/>-->
+										<!--</m:OverflowToolbar>-->
+									<!--</m:headerToolbar>-->
+				<extension>
+					<m:OverflowToolbar style="Clear">
+						<m:Title id="title" text="Labour"/>
+							<m:ToolbarSpacer/>
+							<m:Button id="editButton2" text="Add Row" tooltip="Add rows" icon="sap-icon://add" type="Success" press="onAddRowContract"/>
+						<m:Button
+							icon="sap-icon://sorting-ranking"
+							tooltip="Sort ascending across Categories and Name"
+							press="sortCategoriesAndName"/>
+						<m:Button
+							icon="sap-icon://sort"
+							tooltip="Sort Categories in addition to current sorting"
+							press="sortCategories"/>
+						<m:Button
+							icon="sap-icon://decline"
+							tooltip="Clear all sortings"
+							press="clearAllSortings"/>
+					</m:OverflowToolbar>
+				</extension>
+				<columns class="sapwidth">
+					
+					<Column
+						
+						width="11rem"
+						
+						sortProperty="supplier"
+						filterProperty="supplier">
+						<m:Label text="Job Catagories" textAlign="Center" width="100%"/>
+						<template>
+							<m:Text text="{supplier}"/>
+						</template>
+					</Column>
+					
+					<Column
+						width="11rem"
+						sortProperty="supplier"
+						filterProperty="supplier">
+						<m:Label text="Description" textAlign="Center" width="100%"/>
+						<template>
+							<m:Text text="{description}"/>
+						</template>
+					</Column>
+					
+					<!--<Column-->
+					<!--width="6rem"-->
+					<!--	sortProperty="street"-->
+					<!--	filterProperty="street"-->
+					<!--	headerSpan="4">-->
+					<!--	<multiLabels>-->
+					<!--		<m:Label text="31Dec18" textAlign="Center" width="100%"/>-->
+					<!--		<m:Label text="Saudi HeadCount"  wrapping="true"/>-->
+							<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+					<!--	</multiLabels>-->
+					<!--	<template>-->
+					<!--		<m:Input value="{street}" wrapping="true" editable="false"/>-->
+					<!--	</template>-->
+					<!--</Column>-->
+					
+					<!--<Column-->
+					<!--		width="6rem"-->
+					<!--	sortProperty="city">-->
+					<!--	<multiLabels>-->
+					<!--		<m:Label text="31Dec18" wrapping="true"/>-->
+					<!--		<m:Label text="Expats Headcount" wrapping="true"/>-->
+							<!--<m:Label text="City" textAlign="Center" width="100%"/>-->
+					<!--	</multiLabels>-->
+					<!--	<template>-->
+					<!--		<m:Input value="{city}" editable="false"/>-->
+					<!--	</template>-->
+					<!--</Column>-->
+					<!--<Column-->
+					<!--		width="4rem"-->
+					<!--	sortProperty="phone">-->
+					<!--	<multiLabels>-->
+					<!--		<m:Label text="31Dec18"  textAlign="Center"/>-->
+					<!--		<m:Label text="Total" />-->
+					<!--	</multiLabels>-->
+					<!--	<template>-->
+					<!--		<m:Label text="{phone}" textAlign="Center"/>-->
+					<!--	</template>-->
+					<!--</Column>-->
+					<!--<Column width="7rem" >-->
+					<!--	<multiLabels>-->
+					<!--	<m:Label text="31Dec18"/>-->
+					<!--		<m:Label text="Saudization%" textAlign="Center" width="100%"/>-->
+					<!--	</multiLabels>-->
+					<!--	<template>-->
+					<!--		<m:Text text="{openOrders}"/>-->
+					<!--	</template>-->
+					<!--</Column>-->
+		
+					<!--31Dec19-->
+					
+					
+				<Column
+					width="6rem"
+						sortProperty="street"
+						filterProperty="street"
+						headerSpan="4">
+						<multiLabels>
+							<m:Label text="31Dec19" textAlign="Center" width="100%"/>
+							<m:Label text="Saudi HeadCount"  wrapping="true"/>
+							<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{street}" wrapping="true" editable="false"/>
+						</template>
+					</Column>
+					
+					<Column
+							width="6rem"
+						sortProperty="city">
+						<multiLabels>
+							<m:Label text="31Dec19" wrapping="true"/>
+							<m:Label text="Expats Headcount" wrapping="true"/>
+							<!--<m:Label text="City" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{city}" editable="false"/>
+						</template>
+					</Column>
+					<Column
+							width="4rem"
+						sortProperty="phone">
+						<multiLabels>
+							<m:Label text="31Dec19"  textAlign="Center"/>
+							<m:Label text="Total" />
+						</multiLabels>
+						<template>
+							<m:Label text="{phone}" textAlign="Center"/>
+						</template>
+					</Column>
+					<Column width="7rem" >
+						<multiLabels>
+						<m:Label text="31Dec19"/>
+							<m:Label text="Saudization%" textAlign="Center" width="100%"/>
+						</multiLabels>
+						<template>
+							<m:Text text="{openOrders}"/>
+						</template>
+					</Column>
+					
+						<!--31Dec20-->
+					
+					
+				   	<Column
+					width="6rem"
+						sortProperty="street"
+						filterProperty="street"
+						headerSpan="4">
+						<multiLabels>
+							<m:Label text="31Dec20" textAlign="Center" width="100%"/>
+							<m:Label text="Saudi HeadCount"  wrapping="true"/>
+							<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{street}" wrapping="true" editable="false"/>
+						</template>
+					</Column>
+					
+					<Column
+							width="6rem"
+						sortProperty="city">
+						<multiLabels>
+							<m:Label text="31Dec20" wrapping="true"/>
+							<m:Label text="Expats Headcount" wrapping="true"/>
+							<!--<m:Label text="City" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{city}" editable="false"/>
+						</template>
+					</Column>
+					<Column
+							width="4rem"
+						sortProperty="phone">
+						<multiLabels>
+							<m:Label text="31Dec20"  textAlign="Center"/>
+							<m:Label text="Total" />
+						</multiLabels>
+						<template>
+							<m:Label text="{phone}" textAlign="Center"/>
+						</template>
+					</Column>
+					<Column width="7rem" >
+						<multiLabels>
+						<m:Label text="31Dec20"/>
+							<m:Label text="Saudization%" textAlign="Center" width="100%"/>
+						</multiLabels>
+						<template>
+							<m:Text text="{openOrders}"/>
+						</template>
+					</Column>
+
+
+
+					<Column
+						width="6rem"
+						sortProperty="street"
+						filterProperty="street"
+						headerSpan="4">
+						<multiLabels>
+							<m:Label text="31Dec21" textAlign="Center" width="100%"/>
+							<m:Label text="Saudi HeadCount"  wrapping="true"/>
+							<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{street}" wrapping="true" editable="true"/>
+						</template>
+					</Column>
+					<Column
+							width="6rem"
+						sortProperty="city">
+						<multiLabels>
+							<m:Label text="31Dec21" wrapping="true"/>
+							<m:Label text="Expats Headcount" wrapping="true"/>
+							<!--<m:Label text="City" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{city}" editable="true"/>
+						</template>
+					</Column>
+					<Column
+							width="4rem"
+						sortProperty="phone">
+						<multiLabels>
+							<m:Label text="31Dec21"  textAlign="Center"/>
+							<m:Label text="Total" />
+						</multiLabels>
+						<template>
+							<m:Label text="{phone}" textAlign="Center"/>
+						</template>
+					</Column>
+					<Column width="7rem" >
+						<multiLabels>
+						<m:Label text="31Dec21"/>
+							<m:Label text="Saudization%" textAlign="Center" width="100%"/>
+						</multiLabels>
+						<template>
+							<m:Text text="{openOrders}"/>
+						</template>
+					</Column>
+					
+					<!--2019 vs 2020-->
+					
+					<Column
+						width="6rem"
+						sortProperty="street"
+						filterProperty="street"
+						headerSpan="2">
+						<multiLabels>
+							<m:Label text="2019 vs 2020" textAlign="Center" width="100%"/>
+							<m:Label text="Difference"  wrapping="true"/>
+							<!--<m:Label text="Street" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{street}" wrapping="true" editable="false"/>
+						</template>
+					</Column>
+					<Column
+							width="6rem"
+						sortProperty="city">
+						<multiLabels>
+							<m:Label text="2019 vs 2020" wrapping="true"/>
+							<m:Label text="Saudi Growth Rate" wrapping="true"/>
+							<!--<m:Label text="City" textAlign="Center" width="100%"/>-->
+						</multiLabels>
+						<template>
+							<m:Input value="{city}" editable="false"/>
+						</template>
+					</Column>
+					
+					<!--<Column-->
+					<!--		width="4rem"-->
+					<!--	sortProperty="phone">-->
+					<!--	<multiLabels>-->
+					<!--		<m:Label text="31Dec21"  textAlign="Center"/>-->
+					<!--		<m:Label text="Total" />-->
+					<!--	</multiLabels>-->
+					<!--	<template>-->
+					<!--		<m:Label text="{phone}" textAlign="Center"/>-->
+					<!--	</template>-->
+					<!--</Column>-->
+					<!--<Column width="7rem" >-->
+					<!--	<multiLabels>-->
+					<!--	<m:Label text="31Dec21"/>-->
+					<!--		<m:Label text="Saudization%" textAlign="Center" width="100%"/>-->
+					<!--	</multiLabels>-->
+					<!--	<template>-->
+					<!--		<m:Text text="{openOrders}"/>-->
+					<!--	</template>-->
+					<!--</Column>-->
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</columns>
+			</Table>
+>>>>>>> branch 'main' of https://github.com/GadapaNikhil/Cert1.git
 	<!--	</m:content>-->
 	<!--</m:Page>-->
 </mvc:View>

@@ -4,7 +4,11 @@ sap.ui.define([
 ], function(Controller, JSONModel) {
 	"use strict";
 
+<<<<<<< HEAD
 	return Controller.extend("sap.uxap.sample.ObjectPageOnJSON.controller.labour.BlockLabour", {
+=======
+	return Controller.extend("sap.ui.table.sample.MultiHeader.controller.labour.BlockLabour", {
+>>>>>>> branch 'main' of https://github.com/GadapaNikhil/Cert1.git
 				onInit: function() {
 			var oModel = new JSONModel();
 				// this.localModel = new sap.ui.model.json.JSONModel();
