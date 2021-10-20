@@ -1,0 +1,67 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<VBox class="sapUiSmallMargin">
+		<f:Form editable="false" ariaLabelledBy="Title1">
+			<f:title>
+				<core:Title text="Local Executive Signature"/>
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
+					emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+			</f:layout>
+			<!--<f:formContainers>
+				<f:FormContainer ariaLabelledBy="Title2">
+					<f:formElements>
+						<f:FormElement label="Name:">
+							<f:fields>
+								<Text text="+ 1 415-321-1234"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Email">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Office:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Mobile:">
+							<f:fields>
+								<Text value="{Street}"/>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>-->
+		</f:Form>
+		<f:Form editable="true" ariaLabelledBy="Title1">
+			<f:layout>
+				<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
+					emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer ariaLabelledBy="Title4">
+					<f:formElements>
+						<f:FormElement label="Local Company CEO/GM Signature">
+							<f:fields>
+								<!--<Input value="Enter your Full Name"/>-->
+								<InputListItem label="" class="sapMLIB">
+									<Input class="sapMLIB" placeholder="Sign" value=""/>
+								</InputListItem>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Local Company Financial Executive Signature">
+							<f:fields>
+								<InputListItem label="" class="sapMLIB">
+									<Input class="sapMLIB" placeholder="Sign" value=""/>
+								</InputListItem>
+								<!--<Input class="sign" placeholder="Sign " value="{Street}"/>-->
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox>
+</mvc:View>

@@ -116,7 +116,8 @@
 							<company:BlockContactInformation id="contactInformation"/>
 							<company:BlockContactPerson id="contactPerson"/>
 							<company:BlockContactCompany id="contactCompany"/>
-							<company:BlockContactFinancial id="contactFinancial" columnLayout="1"/>
+							<company:BlockContactFinancial id="contactFinancial" />
+							<company:BlockLocalSignature id="LocalSignature" />
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
