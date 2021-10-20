@@ -47,14 +47,14 @@
 							<f:fields>
 								<!--<Input value="Enter your Full Name"/>-->
 								<InputListItem label="" class="sapMLIB">
-									<Input class="sapMLIB" placeholder="Sign" value=""/>
+									<Input class="sapMLIB" placeholder="MOHD AL MARAE" value=""/>
 								</InputListItem>
 							</f:fields>
 						</f:FormElement>
 						<f:FormElement label="Local Company Financial Executive Signature">
 							<f:fields>
 								<InputListItem label="" class="sapMLIB">
-									<Input class="sapMLIB" placeholder="Sign" value=""/>
+									<Input class="sapMLIB" placeholder="MOHD AL MARAE" value=""/>
 								</InputListItem>
 								<!--<Input class="sign" placeholder="Sign " value="{Street}"/>-->
 							</f:fields>
