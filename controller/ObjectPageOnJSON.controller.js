@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/m/MessageToast",
 	"sap/ui/model/json/JSONModel",
-	"sap/ui/core/mvc/Controller"
-], function (MessageToast, JSONModel, Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/m/MessageBox"
+], function (MessageToast, JSONModel, Controller, MessageBox) {
 	"use strict";
 	return Controller.extend("sap.uxap.sample.ObjectPageOnJSON.controller.ObjectPageOnJSON", {
 		onInit: function () {
@@ -24,7 +25,11 @@ sap.ui.define([
 		toggleFooter: function () {
 			var oObjectPageLayout = this.byId("ObjectPageLayout");
 			oObjectPageLayout.setShowFooter(!oObjectPageLayout.getShowFooter());
+		},
+		
+		onSuccessMessageBoxPress: function(){
+			MessageBox.success("Certificate 1234567 was created");
 		}
+		
 	});
 });
-

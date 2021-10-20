@@ -36,20 +36,20 @@
 					<m:HBox>
 					<m:Image src="preview-institutional.jpg"  />
 							<m:Image src="ITKVA.png" width="17%" />
-								<m:Title class="sapUiSmallMarginTop" text="MOHD AL MARAE MODERN EST.B COMPANY" titleStyle="H1" wrapping="true"/>
+							<!--<m:Title class="sapUiSmallMarginTop" text="MOHD AL MARAE MODERN EST.B COMPANY" titleStyle="H1" wrapping="true"/>-->
 	
 					</m:HBox>
 				</expandedHeading>
 
-				<snappedHeading>
-					<m:FlexBox  fitContainer="true" alignItems="Center">
-							<m:Avatar src="/building2.jpg" class="sapUiTinyMarginEnd"/>
+				<!--<snappedHeading>-->
+				<!--	<m:FlexBox  fitContainer="true" alignItems="Center">-->
+				<!--			<m:Avatar src="/building2.jpg" class="sapUiTinyMarginEnd"/>-->
 						<!--<m:Avatar src="/imageID_275314.png" class="sapUiTinyMarginEnd"/>-->
 						<!--<m:Title text="Denise Smith" wrapping="true"/>-->
-						<m:Title text="MOHD AL MARAE MODERN EST.B" wrapping="true"/>
+				<!--		<m:Title text="MOHD AL MARAE MODERN EST.B" wrapping="true"/>-->
 						<!--<m:ObjectMarker type="Favorite" class="sapUiTinyMarginBegin"/>-->
-					</m:FlexBox>
-				</snappedHeading>
+				<!--	</m:FlexBox>-->
+				<!--</snappedHeading>-->
 
 				<!--<expandedContent>-->
 				<!--	<m:Text text="Construction Work"/>-->
@@ -67,11 +67,11 @@
 					<!--<m:OverflowToolbarButton icon="sap-icon://edit" text="edit header" type="Emphasized" tooltip="edit">-->
 					<!--	<m:layoutData>-->
 					<!--		<m:OverflowToolbarLayoutData priority="NeverOverflow"/>-->
-						<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Lisa Andrew" design="Bold"/>
-			<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="|" design="Bold"/>
-			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Phone:" design="Bold"/>
-			<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd"  text="+966 56 603 0397"/>
-				<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>
+						<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Lisa Andrew" design="Bold"/>-->
+			<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="|" design="Bold"/>-->
+			<!--<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd" text="Phone:" design="Bold"/>-->
+			<!--<m:Label  class="mycolor sapUiSmallMarginTop sapUiTinyMarginEnd"  text="+966 56 603 0397"/>-->
+				<!--<m:Label class="mycolor sapUiSmallMarginTop sapUiTinyMarginBegin" text="|" design="Bold"/>-->
 					<m:Button class="sapUiSmallMarginTop sapUiTinyMarginEnd " text="Actions" type="Emphasized" press="toggleFooter"/>
 					<!--	</m:layoutData>-->
 					<!--</m:OverflowToolbarButton>-->
@@ -238,7 +238,7 @@
 		<footer>
 			<m:OverflowToolbar>
 				<m:ToolbarSpacer />
-				<m:Button type="Accept" text="Accept"/>
+				<m:Button type="Accept" text="Accept" press=".onSuccessMessageBoxPress"/>
 				<m:Button type="Reject" text="Reject"/>
 			</m:OverflowToolbar>
 		</footer>
