@@ -228,14 +228,16 @@
 		<footer>
 			<m:OverflowToolbar>
 				<m:ToolbarSpacer/>
-				<m:Button type="Accept" text="Create" press=".onSuccessMessageBoxPress"/>
-				<m:Button type="Reject" text="Reject"/>
+				<!--<m:Button type="Accept" text="Create" press=".onSuccessMessageBoxPress"/>-->
+				<!--<m:Button type="Reject" text="Reject"/>-->
 				<!--<m:Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="true"/>-->
 				<!-- 	<m:Button id="editButton" text="Create" type="Success" press="onEdit"/>-->
 
 				<m:ToolbarSpacer />
 				<m:Button id="saveButton" icon="sap-icon://save" text="Save" type="Neutral" press="onSave" visible="true"/>
+				<m:Button id="editButton1" text="Submit" type="Success" press="onEdit"/>
 				 	<m:Button id="editButton" text="Create" type="Success" press="onEdit"/>
+				 	
 			</m:OverflowToolbar>
 		</footer>
 	</ObjectPageLayout>
